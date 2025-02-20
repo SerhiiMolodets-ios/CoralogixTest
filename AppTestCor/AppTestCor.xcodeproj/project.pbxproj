@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		089AD8992D6778C3008BC9D8 /* SDKTestCor.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089AD8982D6778C2008BC9D8 /* SDKTestCor.xcframework */; };
+		089AD89A2D6778C3008BC9D8 /* SDKTestCor.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 089AD8982D6778C2008BC9D8 /* SDKTestCor.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		089AD87B2D6777BB008BC9D8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -23,10 +28,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		089AD89B2D6778C3008BC9D8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				089AD89A2D6778C3008BC9D8 /* SDKTestCor.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		089AD86A2D6777B9008BC9D8 /* AppTestCor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTestCor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		089AD87A2D6777BB008BC9D8 /* AppTestCorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppTestCorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		089AD8842D6777BB008BC9D8 /* AppTestCorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppTestCorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		089AD8982D6778C2008BC9D8 /* SDKTestCor.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SDKTestCor.xcframework; path = ../SDKTestCor/build/SDKTestCor.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				089AD8992D6778C3008BC9D8 /* SDKTestCor.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +99,7 @@
 				089AD86C2D6777B9008BC9D8 /* AppTestCor */,
 				089AD87D2D6777BB008BC9D8 /* AppTestCorTests */,
 				089AD8872D6777BB008BC9D8 /* AppTestCorUITests */,
+				089AD8972D6778C2008BC9D8 /* Frameworks */,
 				089AD86B2D6777B9008BC9D8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +114,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		089AD8972D6778C2008BC9D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089AD8982D6778C2008BC9D8 /* SDKTestCor.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,6 +132,7 @@
 				089AD8662D6777B9008BC9D8 /* Sources */,
 				089AD8672D6777B9008BC9D8 /* Frameworks */,
 				089AD8682D6777B9008BC9D8 /* Resources */,
+				089AD89B2D6778C3008BC9D8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

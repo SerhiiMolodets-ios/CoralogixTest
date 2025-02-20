@@ -1,0 +1,79 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "SDKTestCor",
+    "printedName": "SDKTestCor",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SDKTestCor",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Coralogix",
+        "printedName": "Coralogix",
+        "declKind": "Import",
+        "moduleName": "SDKTestCor"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CallCoralogix",
+        "printedName": "CallCoralogix",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "call",
+            "printedName": "call()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SDKTestCor13CallCoralogixV4callyyFZ",
+            "mangledName": "$s10SDKTestCor13CallCoralogixV4callyyFZ",
+            "moduleName": "SDKTestCor",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10SDKTestCor13CallCoralogixV",
+        "mangledName": "$s10SDKTestCor13CallCoralogixV",
+        "moduleName": "SDKTestCor",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

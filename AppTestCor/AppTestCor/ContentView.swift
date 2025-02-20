@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SDKTestCor
 
 struct ContentView: View {
     var body: some View {
@@ -16,9 +17,8 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .onAppear {
+            CallCoralogix.call()
+        }
     }
-}
-
-#Preview {
-    ContentView()
 }

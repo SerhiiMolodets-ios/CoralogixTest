@@ -1,0 +1,6 @@
+framework module SDKTestCor {
+  umbrella header "SDKTestCor.h"
+  export *
+
+  module * { export * }
+}
